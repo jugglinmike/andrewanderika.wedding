@@ -1,0 +1,84 @@
+html {
+	font-size: 62.5%;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ecebe6;
+	color: #333;
+	font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+	font-size: 2rem;
+}
+
+a, a:active, a:visited {
+	color: #604176;
+	font-weight: 900;
+	text-decoration: none;
+}
+a:active { outline: 0; }
+
+main {
+	margin: 3rem auto;
+	width: 50rem;
+}
+
+h1, h2 {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 800;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+p, ul {
+	margin: 0 0 2rem;
+}
+
+header, section {
+	margin-bottom: 7rem;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+section h1 {
+	margin-bottom: 3rem;
+}
+
+header h1, section h2 {
+	color: #3d7c6d;
+}
+
+.haight-logo {
+	width: 10em;
+}
+.schedule, .venue {
+	vertical-align: middle;
+	display: inline-block;
+}
+.venue {
+	float: right;
+}
+.venue p {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.rsvp {
+	text-align: center;
+}
