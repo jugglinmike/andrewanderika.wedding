@@ -1,0 +1,103 @@
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #3D285D;
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 2rem;
+}
+
+h1, section h2, .hour {
+	color: rgb(146, 188, 154);
+	text-align: center;
+	text-transform: uppercase;
+}
+section h2 { text-align: left !important; }
+
+a {
+	color: #ffefd2;
+}
+
+.hour {
+	margin-right: 2rem;
+
+	font-size: 4rem;
+	vertical-align: middle;
+}
+
+main {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 10rem 0 14rem;
+	text-align: center;
+}
+
+section {
+	margin-bottom: 14rem;
+}
+section h2 {
+	margin-bottom: 2.8rem;
+}
+section ul {
+	margin: 0 0 4rem;
+	padding: 0;
+
+	list-style-type: none;
+	font-size: 2.5rem;
+}
+section li {
+	margin-bottom: 1rem;
+}
+
+section ul:not(.schedule) li:not(:first-child) {
+	margin-bottom: 0;
+
+	font-size: 1.8rem;
+}
+
+.schedule {
+	display: inline-block;
+}
+
+.venue {
+	float: right;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.venue img {
+	height: 11rem;
+}
+
+header h1, h2 {
+	margin: 0;
+}
+header h1 {
+	font-size: 7rem;
+}
+
+h1 span {
+	vertical-align: middle;
+}
+header h2 {
+	font-weight: normal;
+}
+header .couple {
+	letter-spacing: 1rem;
+}
+header .date {
+	letter-spacing: 1.7rem;
+}
+
+h1 .minor {
+	font-size: 2.5rem;
+}
