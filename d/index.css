@@ -150,33 +150,43 @@ section h2 {
 }
 
 /* clearfix */
-section:after {
+section:after, #wedding-details p {
 	display: table;
 	content: ' ';
 	clear: both;
 }
 
 #welcome h2 {
-	text-align: left;
-	margin-bottom: 0.5em;
-}
-.venue {
-	width: 25%;
-	display: block;
+	font-size: 3em;
 	float: left;
-}
-.venue img  {
-	width: 100%;
-}
-#welcome p {
-	width: 75%;
-	padding-right: 1em;
-	float: left;
+	display: inline;
+	margin: 0 0.3em 1em 0;
 }
 #welcome .signature {
 	text-align: right;
 }
 
+#wedding-details .subsection {
+	width: 48%;
+	float: left;
+}
+#wedding-details .subsection.ceremony {
+	margin-right: 4%;
+}
+#wedding-details .subsection em {
+	display: block;
+	padding-bottom: 1em;
+}
+
+.venue {
+	width: 5em;
+	display: block;
+	margin-right: 1em;
+	float: left;
+}
+.venue img  {
+	width: 100%;
+}
 
 #story {
 	position: relative;
@@ -212,20 +222,28 @@ section:after {
 	margin-bottom: 1.5em;
 }
 
-.rsvp {
-	margin: 9em 0 0 9em;
+#registry ul {
+	margin: 2em 0;
+}
+#registry li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+footer {
+	margin: 9em 0 0 0;
 	height: 10em;
+	padding-left: 20em;
 
 	position: relative;
 
 	text-align: center;
 }
-.rsvp img {
+footer img {
 	position: absolute;
 	bottom: 0;
-	left: -11em;
-
-	display: block;
+	left: -1em;
 }
 
 @media screen and ( max-width: 53em ) and ( min-width: 45em ) {
@@ -250,17 +268,15 @@ section:after {
 }
 
 @media screen and ( max-width: 45em ) {
-	#welcome p, #welcome .venue {
-		width: auto;
+	#welcome h2 {
+		display: block;
 		float: none;
+		margin-bottom: 0;
 	}
-	#welcome .venue {
-		margin-bottom: 1em;
 
-		text-align: center;
-	}
-	#welcome .venue img {
-		width: 10em;
+	.venue {
+		float: none;
+		width: auto;
 	}
 
 	#story .text {
@@ -280,12 +296,12 @@ section:after {
 		position: static;
 	}
 
-	.rsvp {
-		margin-left: 0;
+	footer {
+		padding-left: 0;
 		height: auto;
 	}
 
-	.rsvp img {
+	footer img {
 		position: static;
 	}
 }
@@ -308,6 +324,14 @@ section:after {
 	.minor {
 		display: block;
 		line-height: 1;
+	}
+
+	#wedding-details .subsection {
+		width: auto;
+		float: none
+	}
+	#wedding-details .subsection.ceremony {
+		margin-right: 0;
 	}
 
 	#accomodations ul {
