@@ -1,0 +1,327 @@
+html {
+	font-size: 62.5%;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #593910;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 2em;
+
+	background: #ecebe6;
+	background: url('img/wood.jpg');
+
+	/* FF3.6-15 */
+	background: url('img/wood.jpg'),
+		-moz-linear-gradient(top,
+			rgba(240, 249, 255, 0.3) 0%,
+			rgba(161, 219, 255, 0) 100%);
+
+	/* Chrome10-25,Safari5.1-6 */
+	background:
+		-webkit-linear-gradient(top,
+			rgba(240, 249, 255, 0.3) 0%,
+			rgba(161, 219, 255, 0) 90%),
+		url('img/wood.jpg');
+
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background:
+		linear-gradient(to bottom,
+			rgba(240, 249, 255, 0.3) 0%,
+			rgba(161, 219, 255, 0) 90%), 
+		url('img/wood.jpg'); 
+
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#00a1dbff',GradientType=0 );
+}
+
+a, a:active, a:visited {
+	color: inherit;
+	font-weight: 900;
+	text-decoration: none;
+}
+a:active { outline: 0; }
+
+main {
+	margin: 0 auto;
+	max-width: 45em;
+}
+
+h1, h2 {
+	font-weight: 800;
+}
+header h1, section h2 {
+	color: #3d7c6d;
+	font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua,
+		Georgia, serif;
+}
+
+h1 {
+	font-size: 6.2rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+ul {
+	padding: 0;
+
+	list-style-type: none;
+}
+
+p, ul {
+	margin: 0 0 3rem;
+}
+
+header {
+	height: 40rem;
+	max-width: 27em;
+	width: 100%;
+	padding-top: 5em;
+	margin: 0 auto;
+
+	background-image: url('img/pine-cone-grey.png');
+	background-position: right 0;
+	background-size: 14rem;
+	background-repeat: no-repeat;
+}
+
+section {
+	margin: 0 1em 6em;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+header hgroup {
+	margin-bottom: 3em;
+}
+header hgroup, nav ul {
+	padding-right: 7em;
+}
+header h1 {
+	line-height: 0.3em;
+}
+header h1.his { display: inline; }
+header h1.hers {
+	text-align: right;
+}
+header .minor {
+	position: relative;
+	left: -0.4em;
+	top: 0.4em;
+	opacity: 0.4;
+	line-height: 0;
+
+	font-size: 8em;
+	z-index: -1;
+	text-align: center;
+}
+
+nav ul {
+
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+nav a {
+	padding: 0.2em 0.5em;
+	display: block;
+}
+
+header h2 {
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+section h2 {
+	text-align: center;
+}
+
+/* clearfix */
+section:after {
+	display: table;
+	content: ' ';
+	clear: both;
+}
+
+#welcome h2 {
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+.venue {
+	width: 25%;
+	display: block;
+	float: left;
+}
+.venue img  {
+	width: 100%;
+}
+#welcome p {
+	width: 75%;
+	padding-right: 1em;
+	float: left;
+}
+#welcome .signature {
+	text-align: right;
+}
+
+
+#story {
+	position: relative;
+}
+#story img, #story .text {
+	display: block;
+	float: left;
+}
+#story .text {
+	width: 50%;
+	padding: 0 1em;
+}
+#story p:last-child {
+	margin-bottom: 0;
+}
+#story img {
+	width: 25%;
+}
+#story .amsterdam {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#accomodations ul {
+	width: 47%;
+	float: left;
+}
+#accomodations ul:first-of-type {
+	margin-right: 6%;
+}
+#accomodations li:first-child {
+	margin-bottom: 1.5em;
+}
+
+.rsvp {
+	margin: 9em 0 0 9em;
+	height: 10em;
+
+	position: relative;
+
+	text-align: center;
+}
+.rsvp img {
+	position: absolute;
+	bottom: 0;
+	left: -11em;
+
+	display: block;
+}
+
+@media screen and ( max-width: 53em ) and ( min-width: 45em ) {
+	#story .aquarium {
+		margin-bottom: 1.2em;
+	}
+	#story .text p:first-of-type {
+		margin-left: 28%;
+		margin-right: 0;
+		clear: none;
+	}
+	#story .text p {
+		margin-left: 0;
+		margin-right: 28%;
+		clear: both;
+	}
+	#story .text {
+		width: auto;
+		padding: 0;
+		float: none;
+	}
+}
+
+@media screen and ( max-width: 45em ) {
+	#welcome p, #welcome .venue {
+		width: auto;
+		float: none;
+	}
+	#welcome .venue {
+		margin-bottom: 1em;
+
+		text-align: center;
+	}
+	#welcome .venue img {
+		width: 10em;
+	}
+
+	#story .text {
+		width: 100%;
+		padding: 0;
+	}
+	#story p:last-child {
+		margin-bottom: 1em;
+	}
+	#story img {
+		width: auto;
+		max-width: 100%;
+		margin: 0 auto 1em;
+		float: none;
+	}
+	#story .amsterdam {
+		position: static;
+	}
+
+	.rsvp {
+		margin-left: 0;
+		height: auto;
+	}
+
+	.rsvp img {
+		position: static;
+	}
+}
+
+@media screen and ( max-width: 34em ) {
+	header {
+		padding-top: 2.8em;
+	}
+	header .minor {
+		top: 0;
+		left: 0.3em;
+	}
+	header h1 {
+		line-height: 1em;
+	}
+	header hgroup {
+		margin-bottom: 0.9em;
+	}
+
+	.minor {
+		display: block;
+		line-height: 1;
+	}
+
+	#accomodations ul {
+		width: auto;
+		float: none;
+	}
+}
+
+@media screen and ( max-width: 25em ) {
+	header {
+		background: none;
+	}
+
+	header hgroup, nav ul {
+		padding-right: 0;
+	}
+}
