@@ -211,6 +211,12 @@ section:after, #wedding-details p {
 	right: 0;
 }
 
+#rsvp iframe {
+	width: 100%;
+	height: 400px;
+	height: 90vh;
+}
+
 #accomodations ul {
 	width: 47%;
 	float: left;
