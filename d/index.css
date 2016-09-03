@@ -217,14 +217,14 @@ section:after, #wedding-details p {
 	height: 90vh;
 }
 
-#accomodations ul {
+#accommodations ul {
 	width: 47%;
 	float: left;
 }
-#accomodations ul:first-of-type {
+#accommodations ul:first-of-type {
 	margin-right: 6%;
 }
-#accomodations li:first-child {
+#accommodations li:first-child {
 	margin-bottom: 1.5em;
 }
 
@@ -340,7 +340,7 @@ footer img {
 		margin-right: 0;
 	}
 
-	#accomodations ul {
+	#accommodations ul {
 		width: auto;
 		float: none;
 	}
